@@ -3,6 +3,11 @@ const router = new express.Router();
 const storeapi = require("../models/ecommerce");
 
 
+router.get('/', async(req,res)=>{
+    res.send("Welcome")
+})
+
+
 
 // Create Products in Api
 router.post('/storeapi', async(req,res)=>{
